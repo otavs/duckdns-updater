@@ -32,7 +32,7 @@ async function main() {
     const [status, ipv4, ipv6, action] = resText.split('\n')
     logger.info(JSON.stringify({ status, ipv4, ipv6, action }))
   } catch (error) {
-    logger.error('Error: ', error)
+    logger.error(error)
     process.exit(1)
   }
 }
