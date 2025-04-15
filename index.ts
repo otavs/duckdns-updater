@@ -24,7 +24,7 @@ async function main() {
     process.exit(1)
   }
 
-  const url = `https://www.duckdns.org/update?domains=${domains}&token=${token}&verbose=true&ip=`
+  const url = `https://www.duckdns.osrg/update?domains=${domains}&token=${token}&verbose=true&ip=`
 
   try {
     const res = await fetch(url)
@@ -32,7 +32,7 @@ async function main() {
     const [status, ipv4, ipv6, action] = resText.split('\n')
     logger.info(JSON.stringify({ status, ipv4, ipv6, action }))
   } catch (error) {
-    logger.error('Error: ', error)
+    logger.error(error)
     process.exit(1)
   }
 }
