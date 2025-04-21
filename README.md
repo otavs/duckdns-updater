@@ -1,0 +1,1 @@
+Command for cron: `bash -c 'cd ~/projects/duckdns-updater && source ~/.nvm/nvm.sh && npm start'`
