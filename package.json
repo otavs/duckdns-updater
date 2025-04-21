@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "start": "node --no-warnings --env-file=.env index.ts"
+    "start": "node --no-warnings --env-file=.env index.ts >> logs.txt"
   },
   "devDependencies": {
     "@types/node": "^22.14.1"
